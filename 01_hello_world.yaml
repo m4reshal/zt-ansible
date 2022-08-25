@@ -1,6 +1,7 @@
 ---
 - name: Hello world play
   hosts: istanbul
+  gather_facts: no
   tasks:
     - name: Print message to /etc/motd 
       copy:
