@@ -1,0 +1,8 @@
+---
+- name: Hello world play
+  hosts: istanbul
+  tasks:
+    - name: Print message to /etc/motd 
+      copy:
+        content: Hello World this is ansible
+        dest: /etc/motd
